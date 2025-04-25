@@ -1,0 +1,146 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #bfdbfe, #e0f2fe, #ddd6fe);
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.landing-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.blob {
+  position: absolute;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 9999px;
+  filter: blur(48px);
+  opacity: 0.2;
+}
+
+.blob-blue {
+  background-color: #93c5fd;
+  top: 2.5rem;
+  left: 2.5rem;
+}
+
+.blob-purple {
+  background-color: #d8b4fe;
+  bottom: 2.5rem;
+  right: 2.5rem;
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  z-index: 10;
+  width: 100%;
+  align-items: center;
+}
+
+.landing-card {
+  z-index: 10;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  max-width: 42rem;
+  width: 100%;
+  text-align: center;
+  animation: fadeInUp 0.5s ease-out;
+  margin: auto; /* centers card vertically when there's extra space */
+}
+
+.icon-container {
+  background-color: #dbeafe;
+  padding: 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
+  font-size: 2rem;
+  color: #3b82f6;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.landing-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.landing-description {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.button-primary,
+.button-secondary {
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.button-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: #1e40af;
+}
+
+.button-secondary {
+  background-color: white;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+.button-secondary:hover {
+  background-color: #eff6ff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icon-image {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.landing-footer {
+  z-index: 10;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}

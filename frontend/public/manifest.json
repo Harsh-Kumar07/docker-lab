@@ -1,0 +1,25 @@
+{
+  "short_name": "HostelMgmt",
+  "name": "NIT Jamshedpur Hostel Management",
+  "icons": [
+    {
+      "src": "/assets/nit-white.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1d4ed8",
+  "background_color": "#ffffff"
+}

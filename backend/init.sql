@@ -1,0 +1,17 @@
+
+CREATE DATABASE hostel;
+USE hostel;
+
+CREATE TABLE IF NOT EXISTS students (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  rollno VARCHAR(50) UNIQUE,
+  roomno VARCHAR(10) UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS complaints (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  roomno VARCHAR(10),  -- room number
+  complaint TEXT,
+  FOREIGN KEY (roomno) REFERENCES students(roomno) ON DELETE CASCADE
+);
